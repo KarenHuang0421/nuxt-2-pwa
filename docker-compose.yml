@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  nuxt-pwa
+nuxt:
+  container_name: nuxt-pwa-container
+  context: .
+  port: 
+    - "8080:3000"
+  env_file:
+    - .env
+
